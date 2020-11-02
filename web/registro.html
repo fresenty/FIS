@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>SisFin | Registro</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="Stylesheet" href="css/estilos.css">        
+        <script type="text/javascript" src="js/javascript.js"></script>
+        <link rel="shortcut icon" href="logo/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="logo/favicon.ico" type="image/x-icon">
+    </head>
+    <body>
+        <header>
+            <div class="grid">
+            <img class="logohead" src="logo/SISFIN.gif" alt="SisFin">   
+            <nav class="navigation">
+              <ul class="navigation__list navigation__list--inline">
+                <li class="navigation__item"><a href="index.html">Inicio</a></li>
+                <li class="navigation__item"><a href="about.html">Sobre nosotros</a></li>                  
+                <li class="navigation__item"><a href="login.html" class="is-active">Iniciar Sesion</a></li>                
+              </ul>
+            </nav>
+            </div>
+        </header>
+        <div class="main_reg">
+            <form method="post" onsubmit="registrar()" action="login.html">
+                <div class="formlog">
+                <img class="logo" src="logo/SISFIN.gif" alt="SisFin"></br>
+                <label>Nombre* </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="name" size="50" required=""></br>
+                <label>Apellido* </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="lastname" size="50" required=""></br>
+                <label>Cedula* </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="id" size="50" required=""></br>
+                <label>Correo Electronico* </label>&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="email" size="50" required=""></br>
+                <label>Telefono </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="tel" size="50"></br>
+                </br> 
+                </div>
+                <div class="reg_botones">
+                <input name="envio" type="submit" value="Enviar">               
+                </div>
+                </br>
+                </br>                          
+                <div class="advertencias"> Los campos marcados con * son de caracter obligatorio </div>
+            </form>
+        </div>
+    </body>
+</html>
